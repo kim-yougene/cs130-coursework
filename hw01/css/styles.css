@@ -1,0 +1,78 @@
+/* Global styles
+------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Roboto&display=swap');
+
+html {
+    box-sizing: border-box;
+    /* background: #EEE; */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background: #FEC8D8;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+.projects {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #FFDFD3;
+}
+
+.project-item img {
+  height: 125px;
+  margin-right: 25px;
+  float: left;
+}
+
+.work {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #E0BBE4;
+}
+
+.education {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #D291BC;
+}
+
+.button {
+    padding: 10px;
+    color: #FFFFFF;
+    background: #957DAD;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer {
+    background: #FEC8D8;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+ul#contact {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul#contact li {
+    display: inline;
+}
+
+ul#contact li a {
+    padding: 25px;
+}

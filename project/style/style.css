@@ -266,7 +266,19 @@ h1{font-family: 'Quicksand', serif;}
   display: none;
 }
 
+#page5_1_2 {
+  display: none;
+}
+
 #page5_2 {
+  display: none;
+}
+
+#page5_2_1 {
+  display: none;
+}
+
+#page5_2_2 {
   display: none;
 }
 
@@ -275,5 +287,9 @@ h1{font-family: 'Quicksand', serif;}
 }
 
 #pagewrong_2 {
+  display: none;
+}
+
+#page6 {
   display: none;
 }

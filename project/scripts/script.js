@@ -1,12 +1,31 @@
 var page3 = 0;
 
-const goPage2 = () => {
-  document.body.style.backgroundColor = "black";
+
+
+const goPage1point5 = () => {
   document.getElementById('page1').style.display= "none";
+  document.getElementById('page1point5').style.display ="block";
+}
+document.querySelector('#startBtn').onclick = goPage1point5;
+
+
+
+
+
+const goPage2 = () => {
+  var userName = document.querySelector('#yourName').value;
+  document.getElementById('greeting').innerHTML = "Hello " + userName + ". You have been sleeping in all your classes here at Zoom University. In order to graduate, you need to take this test.";;
+  document.body.style.backgroundColor = "black";
+  document.getElementById('page1point5').style.display= "none";
   document.getElementById('page2').style.display = "block";
 };
 
-document.querySelector('#startBtn').onclick = goPage2;
+document.querySelector('#nameSubmit').onclick = goPage2;
+
+
+
+
+
 
 const goPage3 = () => {
   document.body.style.backgroundColor = "white";
@@ -151,3 +170,33 @@ const goPage6 = () => {
 
 document.querySelector('#right_1_2').onclick = goPage6;
 document.querySelector('#right_2_2').onclick = goPage6;
+
+
+
+var answerswrong = 0
+
+const checkAnswer = ()=>{
+  if (document.querySelector('#answer').value.toUpperCase() == "WHEAT") {
+    document.querySelector('#page6').style.display = "none"
+    document.querySelector('#puzzleWin').style.display = "block"
+
+  }
+
+  if (document.querySelector('#answer').value.toUpperCase() != "WHEAT") {
+    answerswrong +=1
+    alert("Incorrect. You have " + String((3 - answerswrong)) +" tries left!")
+
+  if (answerswrong == 3) {
+    document.querySelector('#page6').style.display = "none"
+    document.querySelector('#puzzleFail').style.display ="block"
+
+  }
+  }
+
+
+}
+
+
+
+
+document.querySelector('#answerSubmit').onclick = checkAnswer

@@ -13,7 +13,7 @@
     <div class="container" id="page1">
             <div class="Introduction text-center row">
                 <div id="title" class="container text-center">
-                    <h1>Escape From Ishan</h1>
+                    <h1>Escape From Professor Ishan: I Need to Graduate!</h1>
                 </div>
                 <div id="author" class="container text-center">
                     <h2>By: Justin Song and Eugene Kim</h2>
@@ -24,92 +24,152 @@
             </div>
     </div>
 
+    <div id="page1point5">
+      <h2 class="text-center row"><input type="text" onfocus="this.value=''" id="yourName" value="What is your name"></h2>
+      <div id="buttonDIV">
+      <button class="text-center row" id="nameSubmit"> Click to submit your name </button>
+        </div>
+
+
+
+
+    </div>
+
     <div class="container" id="page2">
         <h1 class="text-center row dark" > You wake up in a dark room and don't know where you are.</h1>
         <h3 class="text-center row dark"> Try clicking the screen until you find something that lights up the room. You feel something right below this text! </h3>
-        <div class = "text-center">
-            <img id="flashlight" class="flashlight" style="width: 200px" src="images/flashlight.png"/>
+        <div id="light">
+            <img id="flashlight" class="flashlight" style="height: 100px" src="images/flashlight.png"/>
         </div>
     </div>
 
     <div id="page3">
+      <div id="egg">
+          <h3>Not here!</h3>
+      </div>
       <img id="door" src="images/door.png"></src>
-      <div id="hint" class="container text-center">
-          <h1>Look for the exit!</h1>
+      <div id="hint">
+          <h3>Look for the exit!</h3>
       </div>
     </div>
 
     <div id="page4">
-      <h1 class="text-center row"> You see your Professor, Ishan, outside waiting for you. </h1>
-      <h3 class="text-center row"> "Greetings, Student. You have been a poor learner. I have a series of questions for you." </h3>
+      <h1 class="text-center row"> You see your Professor, Professor Ishan, outside waiting for you. </h1>
+      <h3 id="greeting" class="text-center row"> </h3>
       <h3 class="text-center row"> "But first, Red Pill or Blue Pill?" </h3>
+      <div id="pills">
       <img id="bluepill" src="images/bluepill.png"></src>
+      <img id="ishan" src="images/IshanOurDearFriendFromHighSchool.png"></src>
       <img id="redpill" src="images/redpill.png"></src>
+    </div>
     </div>
 
     <div id="page5_1">
       <h1 class="text-center row"> "Here's your first history question." </h1>
       <h3 class="text-center row"> "How many years did the 'One Hundred Years War' last?" </h3>
-      <button id="wrong_12" type="button">100 years, duh</button>
-      <button id="right_1" type="button">116 years</button>
-      <button id="wrong_13" type="button">4 years</button>
+    <div id="buttonDIV">
+      <button  id="wrong_12" type="button">100 years, duh</button>
+      <button   id="right_1" type="button">116 years</button>
+      <button   id="wrong_13" type="button">4 years</button>
+    </div>
     </div>
 
     <div id="page5_1_1">
       <h1 class="text-center row"> "Here's your second question." </h1>
-      <h3 class="text-center row"> "What year did World War 3 take place?" </h3>
-      <button id="wrong_14" type="button">2020</button>
-      <button id="right_1_1" type="button">2021</button>
-      <button id="wrong_15" type="button">1947</button>
+      <h3 class="text-center row"> "What letter does Morty Schapiro's middle name start with" </h3>
+      <div id="buttonDIV">
+      <button id="wrong_14" type="button">T</button>
+      <button id="right_1_1" type="button">O</button>
+      <button id="wrong_15" type="button">M</button>
+    </div>
     </div>
 
     <div id="page5_1_2">
-      <h1 class="text-center row"> "Here's your third question." </h1>
-      <h3 class="text-center row"> "Who was the first President of the US?" </h3>
-      <button id="wrong_16" type="button">Trump</button>
-      <button id="right_1_2" type="button">Washington</button>
-      <button id="wrong_17" type="button">Obama</button>
+      <h1 class="text-center row"> "Here's your third question. It's not related to history but I'm in a disagreement with a friend" </h1>
+      <h3 class="text-center row"> "Which combination of ingredients smells like Coca Cola?" </h3>
+      <div id="buttonDIV">
+      <button id="wrong_16" type="button">Honey and Coriander</button>
+      <button id="right_1_2" type="button">Lime and Cilantro</button>
+      <button id="wrong_17" type="button">Lemon and Cinnamon</button>
+    </div>
     </div>
 
     <div id="pagewrong_1">
       <h1 class="text-center row"> "Wrong!" </h1>
+      <div id="buttonDIV">
       <button id="tryagain_1" type="button">Try again.</button>
+    </div>
     </div>
 
     <div id="page5_2">
       <h1 class="text-center row"> "You've chosen the math questions. Here's your first question." </h1>
       <h3 class="text-center row"> "Imagine z= 10, x = 3, and y = 6" </h3>
       <h3 class="text-center row"> "What is 2z +3x - 6y +12?" </h3>
+      <div id="buttonDIV">
       <button id="wrong_22" type="button">4</button>
       <button id="right_2" type="button">5</button>
       <button id="wrong_23" type="button">7</button>
+    </div>
     </div>
 
     <div id="page5_2_1">
       <h1 class="text-center row"> "Pretty good but I doubt you'll get this one!" </h1>
       <h3 class="text-center row"> "10 dollars is worth 20 Scoobs. A Scoob is worth 20 Won. 1 Won is worth 3 Dubloons." </h3>
       <h3 class="text-center row"> If I have 600 Dubloons and 80 Scoobs, how many dollars do I have? </h3>
+      <div id="buttonDIV">
       <button id="wrong_24" type="button">33</button>
       <button id="right_2_1" type="button">45</button>
       <button id="wrong_25" type="button">47</button>
     </div>
+    </div>
 
     <div id="page5_2_2">
-      <h1 class="text-center row"> "Wow. I made that question on the fly but you got. This is your last one. You won't get this... I think" </h1>
+      <h1 class="text-center row"> "Wow. I made that question on the fly but you got it. This is your last one. You won't get this... I think" </h1>
       <h3 class="text-center row"> "How many O's are there in this string of text: 'OOO00O0OO00OOOO0OOO0O0OO0OOO0OOO0OOO0OOO'" </h3>
+      <div id="buttonDIV">
       <button id="wrong_26" type="button">27</button>
       <button id="right_2_2" type="button">28</button>
       <button id="wrong_27" type="button">29</button>
     </div>
+    </div>
 
     <div id="pagewrong_2">
       <h1 class="text-center row"> "Wrong!" </h1>
+      <div id="buttonDIV">
       <button id="tryagain_2" type="button">Try again.</button>
+    </div>
     </div>
 
     <div id="page6">
       <h1 class="text-center row"> "Puzzle time!" </h1>
+      <h2 class ="text-center row">I am a word and you need to guess me:<h2>
+      <h2 class ="text-center row">If you remove my 1 letter I will be a form of energy!<h2>
+      <h2 class ="text-center row">If you remove my first 2 letters I will be needed for living.<h2>
+      <h2 class ="text-center row">If you remove my first 3 letters I will be a preposition.<h2>
+      <h2 class ="text-center row">If you remove my first 4 letters I will be a drink for you.<h2>
+      <h2 class ="text-center row">What am I?<h2>
+    <h2 class="text-center row"><input type="text" onfocus="this.value=''" id="answer" value="Type your answer here"></h2>
+    <div id="buttonDIV">
+    <button class="text-center row" id="answerSubmit"> Click to submit your answer </button>
+      </div>
     </div>
+
+
+    <div id="puzzleFail">
+        <h1 class="text-center row">You failed the test! You are forever doomed to being Professor Ishan's TA without pay.</h1>
+        <h1 class="text-center row">Perhaps you will never graudate...</h1>
+        <h3 class="text-center row">Refresh to start over.</h3>
+    </div>
+
+    <div id="puzzleWin">
+        <h1 class="text-center row">You successfully passed Professor Ishan's quizzes, which has boosted your self-esteem!</h1>
+        <h1 class="text-center row">You muster the courage to escape his clutches and finally graduate.</h1>
+        <div id="diplomalink">
+        <a class="text-center row" href="images/Diploma.png" download="ZoomUniDiploma.png">Click here to download your diploma</a>
+      </div>
+
+      </div>
+
 
     </body>
 <script src="scripts/script.js"></script>

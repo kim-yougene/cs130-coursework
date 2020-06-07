@@ -9,7 +9,63 @@ body{
     font-size: 16px;
     color:rgb(10, 27, 56);
     background-color:white;
+    -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none;
 }
+
+#buttonDIV{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+button{
+  font-family: 'Quicksand', serif !important;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  background-color: white;
+  border-color: black;
+
+}
+
+#ishan{
+  height: 400px;
+}
+
+
+#pills{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hint{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+#light{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+#diplomalink{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .dark{
   color: white;
@@ -115,8 +171,19 @@ h1{font-family: 'Quicksand', serif;}
 
     }
 
+#bluepill{
+  -webkit-animation: flasher linear 2s infinite;
+ 	animation: flasher linear 2s infinite;
+     animation-delay: 5s;
+     animation-fill-mode: backwards;
+}
 
-
+#redpill{
+  -webkit-animation: flasher linear 2s infinite;
+ 	animation: flasher linear 2s infinite;
+     animation-delay: 3s;
+     animation-fill-mode: backwards;
+}
 
 /* Animations - */
 
@@ -206,15 +273,24 @@ h1{font-family: 'Quicksand', serif;}
     margin: 0 auto;
 }
 
+
+#page1point5{
+  display:none;
+}
+
 #page2{
   display: none;
 }
 
 #door{
-  height:50px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 75px;
+}
+
+#egg{
+  display: flex;
 }
 
 #redpill{
@@ -291,5 +367,13 @@ h1{font-family: 'Quicksand', serif;}
 }
 
 #page6 {
+  display: none;
+}
+
+#puzzleFail{
+  display: none;
+}
+
+#puzzleWin{
   display: none;
 }
